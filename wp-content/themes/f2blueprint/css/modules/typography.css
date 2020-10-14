@@ -1,0 +1,41 @@
+.slidetext {
+    width: 100%;
+    color: white;
+    backface-visibility: hidden;
+    
+    &-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 1.2rem;
+        text-align: center; 
+        
+            &--01 span{
+               
+            }
+
+            &--02 span{
+                visibility: transparent;
+            }
+
+            &--03 span{
+                
+            }
+
+            &--04 span{
+                
+            }
+
+            &--05 span{
+                
+            }
+
+            &--06 span{
+                
+            }
+     }
+}

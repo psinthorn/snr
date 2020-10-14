@@ -1,0 +1,52 @@
+.full-width-split {
+  @mixin atMedium {
+    display: flex;
+  }
+
+  &__one {
+    flex: 1;
+    padding: 1.6rem 16px;
+    @mixin atMedium {
+      padding: 40px;
+    }
+
+    .full-width-split__inner {
+      @mixin atMedium {
+        float: right;
+      }
+    }
+  }
+
+  &__two {
+    flex: 1;
+    background-color: $beige;
+    padding: 1.6rem 16px;
+    @mixin atMedium {
+      padding: 40px;
+    }
+  }
+
+  &__inner {
+    
+    @media (min-width: 1350px) {
+      width: 610px;
+    }
+  }
+}
+
+.bg-video {
+    background-color: cadetblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: .6;
+    z-index: -1;
+    overflow: hidden;
+    &-content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
